@@ -1,6 +1,15 @@
 import { Router } from 'express'
 import controllers from './item.controllers'
 
+/**
+ *  res.status('200') // set the status code for the response. Chainable (se puede concatenar con otros metodos)
+ * res.send({...}) // Sends whatever you want, kind of smart, but still needs other things for more complex formats.
+ * res.json({...}) // Explicitly sends json
+ * res.end() // ends the response
+ * res.send() == return. DO NOT write anything else after that.
+
+ */
+
 const router = Router()
 
 // /api/item
